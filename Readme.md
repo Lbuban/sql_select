@@ -133,3 +133,15 @@ mysql> select * from grade;
 5 rows in set (0.00 sec)
 
 *****HARD******
+
+mysql> explain assignment;
++----------------+------------------+------+-----+---------+----------------+
+| Field          | Type             | Null | Key | Default | Extra          |
++----------------+------------------+------+-----+---------+----------------+
+| assignment_id  | int(11) unsigned | NO   | PRI | NULL    | auto_increment |
+| student_id     | int(11) unsigned | YES  | MUL | NULL    |                |
+| assignment_nbr | int(11)          | NO   |     | NULL    |                |
+| class_id       | int(11)          | YES  |     | NULL    |                |
+| grade_id       | int(11)          | YES  | MUL | NULL    |                |
++----------------+------------------+------+-----+---------+----------------+
+5 rows in set (0.00 sec)
